@@ -1,8 +1,8 @@
-export default
-    function greet(name) 
+export default function greet(name)
 {
-    var message = "Hello, "+name;
-    return message;
-  }
-  greet("Bob");
-  console.log(greet());
+  var message="Hello, ";
+  
+  return message+name;
+  
+}
+

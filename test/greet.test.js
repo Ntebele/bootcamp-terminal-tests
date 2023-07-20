@@ -1,13 +1,14 @@
-import greet from "../greet";
-import assert from "assert"
+import assert from "assert";
+import greet from "../greet.js";
 
-describe('Test my greet function' , function(){
-    it("should return `Hello, Bob` when called with 'Bob' " , function(){
-        assert.equal("Hello, Bob", greet('Bob'), "This should not be true");
+
+describe('The greet function', function()
+{
+    it('should greet Lerato correctly', function(){
+        assert.equal('Hello, Lerato', greet('Lerato'));
     });
-
-        it("should return `Hello, Sam` when called with 'Sam'", function() {
-        assert.equal("Hello, Sam" , greet('Sam'),  "This should not be true");
-    });
-
+    it('should greet Lebohang correctly', function(){
+        // this test will fail - can you fix it?
+        assert.equal('Hello, Lebohang', greet('Lebohang'));
 });
+})

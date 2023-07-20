@@ -1,16 +1,16 @@
-export default function countAllFromTown(regNums, town) {
-  
-    var regNumsArray = regNums.split(",");
-    
-   var count = 0;
-    
-    for (var i = 0; i < regNumsArray.length; i++) {
-      if (regNumsArray[i].trim().startsWith(town)) {
-  
+function countAllFromTown(regNo,code)
+{
+  let list=regNo.split(',');
+  var count=0;
+  for(let item of list)
+  {
+    if(item.includes(code))
+    {
       count++;
-     }
     }
-    
-     //Return the final count
-    return count;
   }
+  return count;
+  //return count2;
+}
+
+export default countAllFromTown;

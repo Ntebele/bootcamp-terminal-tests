@@ -1,13 +1,12 @@
-export default
-function regCheck(regNo, regLoc) 
+function regCheck(regNo,locIndicator)
 {
-  if (regNo.includes("GP")&&regLoc.includes("GP") || regNo.includes("EC")&&regLoc.includes("EC") ||regNo.includes("MP")&&regLoc.includes("MP") ||regNo.includes("L")&&regLoc.includes("L"))
+  if(regNo.includes("GP")&&locIndicator.includes("GP")||regNo.includes("L")&&locIndicator.includes("L")||regNo.includes("EC")&&locIndicator.includes("EC")||regNo.includes("MP")&&locIndicator.includes("MP"))
   {
     return true;
   }
-  
- else 
- {
-   return false;
+  else
+  {
+    return false;
+  }
 }
-}
+export default regCheck;

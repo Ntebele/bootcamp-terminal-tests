@@ -1,8 +1,10 @@
-export default
-function yearsAgo(years) {
-    const date = new Date();
-    var pastyears = date.getFullYear()-years;
-    return pastyears;
-  }
-  yearsAgo('2020');
+function yearsAgo(year)
+{
+  var thisYear=new Date();
+  var countYears=thisYear.getFullYear()-year;
   
+  return countYears;
+}
+yearsAgo("2000")
+
+export default yearsAgo;

@@ -1,13 +1,14 @@
-export default
-function isFromBellville(registration) 
+function isFromBellville(registrationNo)
 {
-  if (registration.startsWith('CY'))
-{
-      return true;
+  if(registrationNo.startsWith("CY"))
+  {
+    return true
+  }
+  else
+  {
+    return false;
+  }
 }
-      else
-{
-      return false;
-}
-}
-// console.log(isFromBellville('CY 330')) 
+
+
+export default isFromBellville;

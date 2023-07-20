@@ -1,12 +1,16 @@
-export default
-function countAllPaarl(regNumString) {
-    const regNums = regNumString.split(','); 
-    let count = 0; 
-    for (let i = 0; i < regNums.length; i++) {
-      const regNum = regNums[i].trim(); 
-      if (regNum.startsWith('CJ')) { 
-        count++; 
-      }
+function countAllPaarl(regNo)
+{
+  let splitReg=regNo.split(',');
+  //initialize the count
+  var count=0
+  for(var b=0;b<splitReg.length;b++)
+  {
+    var filterList=splitReg[b];
+    if(filterList.includes("CJ"))
+    {
+      count=count+1;
     }
-    return count; 
   }
+  return count;
+}
+export default countAllPaarl;

@@ -1,10 +1,13 @@
-export default
-function isWeekday(Weekday) {
-    if (Weekday.startsWith('Sat') || Weekday.startsWith('Sun')) {
-      return false;
-    }
-     else {
-       return true;}
-   }
-   console.log(isWeekday('Sunday'))
-   
+function isWeekday(checkDay)
+{
+  if(checkDay.startsWith("Sat")||checkDay.startsWith("Sun"))
+  {
+    return false;
+  }
+  else
+  {
+    return true;
+  }
+}
+
+export default isWeekday;

@@ -25,9 +25,9 @@
   "contributors": [],
   "scripts": {
     "dev": "",
-    "test": "mocha"
+    "test": "mocha test"
   },
-  "devDependencies": {
+  "dependencies": {
     "mocha": "^10.2.0"
   }
 }
